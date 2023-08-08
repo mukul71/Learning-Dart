@@ -27,5 +27,10 @@ void main() {
   int num = 10;
   num = 10.5; // This will generate an error.
   
-  
+  // But, to use the type 'dynamic' allows you to use any type of data.
+
+  dynamic myNumber;
+  myNumber = 10; // int
+  myNumber = 10.5; // double 
+  myNumber = "Karim"; // String
 }
