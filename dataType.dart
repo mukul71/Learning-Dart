@@ -42,5 +42,29 @@ void main() {
                 // you do do not use the typ int before num.
   num = 15; // no problem
   num = 15.5; // it will not allow you to change the data type to double or String.
+
+  //Constant and Final
+  //Dart has another 2 different type of variables whose values never change.
+  //They are const and final
+  // Sometimes mutable variables can loose their track, that's hy immutable
+  // data types are used.
+  //To create constant in dart, const keyword is used. As below example:
+
+  const myConstant = 10;
+  myConstant = 0; // This will generate an error.
+
+  // In dart, const, is used during compile time, that is for values that can
+  // be determined by the compiler before the program starts running.
+  // If you can’t create a const variable because you don’t know its value
+  // at compile time, then you must use the final keyword to make it a runtime
+  // constant
+  // Like constant, you cannot change the data type once the value is assigned.
+   
+  final finalNumber = 10;
+  finalNumber =10.5; // Thi will generate error. 
+  
+  // in constant you must assign the value while you declare it, but in final
+  // you can assign the value later by keeping it empty during declaration. 
+
   
 }
