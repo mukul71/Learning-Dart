@@ -33,4 +33,14 @@ void main() {
   myNumber = 10; // int
   myNumber = 10.5; // double 
   myNumber = "Karim"; // String
+
+    // the keyword var can also give a you little freed regarding data type
+  //if you use the var keyword, assign value to the corresponding variable
+  // dart will identify the type of data and follow it through out the block.
+
+  var num = 10; // dart will automatically consider this as an integer even
+                // you do do not use the typ int before num.
+  num = 15; // no problem
+  num = 15.5; // it will not allow you to change the data type to double or String.
+  
 }
