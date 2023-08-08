@@ -20,4 +20,10 @@ void main() {
 
   // One interesting example
   print(10.isEven); // Can you tell what will be the output? 
+ //Dart is type safe language. If you declare data type once for a variable
+  // you cannot change it later.
+  int num = 10;
+  num = 10.5; // This will generate an error.
+  
+  
 }
