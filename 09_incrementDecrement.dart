@@ -45,6 +45,15 @@ void main(){
 
   // can you tell what will be output of counter3 **; ???? 
 
+  //Division 
+ double counter5 = 20; // result of division will be a double
+ print(counter5);
+
+ counter5 = counter5 / 2; // Output will be 10.0
+ print(counter5);
+
+ counter5 /= 2;
+ print(counter5); // output will be 5.0 
 
 
 }
