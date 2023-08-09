@@ -56,7 +56,7 @@ void main(){
  print(counter5); // output will be 5.0 
 
 //Note: you can use ++ or -- before the variable to add or deduct 1 from the value.
-  ++counter  // will increase by 1
-  --counter  // will decrese by 1
+  ++counter;  // will increase by 1
+  --counter;  // will decrese by 1
 
 }
