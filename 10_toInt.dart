@@ -23,4 +23,8 @@ void main(){
   print(becomeDouble); // output will be 5 which is int.
   // We can make it double this way:
   print(becomeDouble.toDouble()); // now it will 5.0 which is a double. 
+
+   // we can make double this way also
+  final actualDouble = 5.toDouble();// final works during runtime
+  print(actualDouble);
 }
