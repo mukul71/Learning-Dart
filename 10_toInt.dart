@@ -17,4 +17,10 @@ void main(){
   //to get the correct answer we should write as below:
   final secondTotalCost = (workedHour * hourlyRate).toInt(); // now output will be195
   print(secondTotalCost);
+  /Similarly we can use the toDouble() method as below
+
+  const becomeDouble = 5;
+  print(becomeDouble); // output will be 5 which is int.
+  // We can make it double this way:
+  print(becomeDouble.toDouble()); // now it will 5.0 which is a double. 
 }
