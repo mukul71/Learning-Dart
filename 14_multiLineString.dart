@@ -7,5 +7,5 @@ void main () {
   by
   doing this.''';
   print(bigString); //Output will be the same as you have written above. 
-  
+  // The three ''' signifies that this is a multi linge string. Three double """ will do the same thing. 
 }
