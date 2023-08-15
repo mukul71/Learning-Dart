@@ -12,5 +12,5 @@ void main () {
    //We can use interpolation for numbers also:
 
   const double oneThird = 1 / 3;
-  print('One-third is $oneThird');
+  print('One-third is $oneThird'); //Output will be : One-third is 0.3333333333333333
 }
