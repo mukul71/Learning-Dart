@@ -18,5 +18,8 @@ void main () {
   'at '
   'runtime.';
   print(bigString2); // Output: This is only a single line at runtime.
-  
+
+   // \n is used to create a new line.
+
+  print('This is a two\nlines code.');
 }
