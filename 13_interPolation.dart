@@ -12,5 +12,7 @@ void main () {
    //We can use interpolation for numbers also:
 
   const double oneThird = 1 / 3;
-  print('One-third is $oneThird'); //Output will be : One-third is 0.3333333333333333
+  print('One-third is $oneThird'); //Output will be : One-third is 0.3333333333333333 (this can be infinite)
+  //We can fix the infinite number of decimal by using toStringAsFixed() method.
+  print('One-third is ${oneThird.toStringAsFixed(3)}.');// output will be o.333  as we fixed it to 3.
 }
