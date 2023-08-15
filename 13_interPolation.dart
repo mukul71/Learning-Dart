@@ -15,4 +15,10 @@ void main () {
   print('One-third is $oneThird'); //Output will be : One-third is 0.3333333333333333 (this can be infinite)
   //We can fix the infinite number of decimal by using toStringAsFixed() method.
   print('One-third is ${oneThird.toStringAsFixed(3)}.');// output will be o.333  as we fixed it to 3.
+
+  //If you perform any operation, you need to use {} after the ' $ ' sign.
+
+  int a = 5;
+  int b =4;
+  print("Total of $a + $b is: ${a+b}."); // output will be 9
 }
