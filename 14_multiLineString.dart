@@ -22,4 +22,8 @@ void main () {
    // \n is used to create a new line.
 
   print('This is a two\nlines code.');
+
+  //we can also get output from unicode charactes, as below: 
+  print('I \u2764 Dart\u0021'); //output: I ❤ Dart
+  print('I love \u{1F3AF}'); //I love 🎯
 }
