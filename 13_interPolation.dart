@@ -7,5 +7,6 @@ void main () {
   int age = 10;
   String gender = 'girl';
 
-  print('Hello, my name is $name, I am $age years old, I am a $gender');
+  print('Hello, my name is $name, I am $age years old, I am a $gender.'); // Output will be: Hello, my name is Aria, I am 10 years old, I am a girl.
+  
 }
