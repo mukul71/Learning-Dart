@@ -8,5 +8,9 @@ void main () {
   String gender = 'girl';
 
   print('Hello, my name is $name, I am $age years old, I am a $gender.'); // Output will be: Hello, my name is Aria, I am 10 years old, I am a girl.
-  
+
+   //We can use interpolation for numbers also:
+
+  const double oneThird = 1 / 3;
+  print('One-third is $oneThird');
 }
