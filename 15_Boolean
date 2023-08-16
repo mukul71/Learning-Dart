@@ -1,0 +1,20 @@
+void main() {
+  //Boolean that is written as bool in dart
+  // in dart bool refers to 'true' or 'false' only as below:
+  //booleans are commonly used to compare values it can be either true or false
+
+  const bool yes = true;
+  const bool no = false;
+  // we use the keyword true or false to state the boolean value.
+
+  const oneEqualToTwo = (1 == 2);
+  print(oneEqualToTwo);  // output will be 'false'
+
+  const oneIsNotEqualToTwo = (1 != 2);
+  print(oneIsNotEqualToTwo); //true
+
+  const greaterThan = (1 >2);
+  print(greaterThan); //false
+
+
+}
