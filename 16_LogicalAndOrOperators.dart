@@ -25,5 +25,10 @@ void main() {
   const orTrue = 1 < 2 || 3 > 4;   //true
   const orFalse = 1 == 2 || 3 == 4; //false 
 
-  
+  //for the below example,
+  3 > 4 && 1 < 2 || 1 < 4;
+  //scenario will be:
+  false && true || true; 
+  //we can print it
+  print(3 > 4 && 1 < 2 || 1 < 4); // output will be true
 }
