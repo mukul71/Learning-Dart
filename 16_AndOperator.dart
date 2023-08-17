@@ -5,5 +5,6 @@ void main() {
   const workFinished = true;
   const willCycling = isSunny && workFinished;
   print(willCycling); //Output will be:  True
-
+   //If either isSunny or isFinished were false ,
+  // then willGoCycling would also be false .
 }
