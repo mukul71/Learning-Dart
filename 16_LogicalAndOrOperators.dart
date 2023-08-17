@@ -17,4 +17,13 @@ void main() {
   const seeBird = false;
   const takePhotograph = willTravel || seeBird;
   print(takePhotograph);
+
+  //Cobined examples
+
+  const andTrue = 1 < 2 && 4 > 3;  //true
+  const andFalse = 1 < 2 && 3 > 4; //false
+  const orTrue = 1 < 2 || 3 > 4;   //true
+  const orFalse = 1 == 2 || 3 == 4; //false 
+
+  
 }
