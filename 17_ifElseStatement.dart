@@ -9,4 +9,11 @@ void main() {
   }else {
     print('Condition didn\t match');
   }
+  const animal = 'Fox';
+
+  if(animal == 'Cat' || animal == 'Dog') {
+    print('$animal is a house pet.');
+  }else {
+    print('$animal is not a house pet.'); // This statement will be the output. 
+  }
 }
