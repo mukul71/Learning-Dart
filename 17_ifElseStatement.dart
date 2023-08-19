@@ -16,5 +16,19 @@ void main() {
   }else {
     print('$animal is not a house pet.'); // This statement will be the output. 
   }
+  void main() {
+  const trafficLight = 'yellow';
+  var command = '';
+  if (trafficLight == 'red') {
+    command = 'Stop';
+  } else if (trafficLight == 'yellow') {
+    command = 'Slow Down';
+  }else if (trafficLight == 'green') {
+    command = "Go";
+  } else {
+    command = "Invalid Color";
+  }
+  print(command); // Output will be Slow down
+}
   
 }
