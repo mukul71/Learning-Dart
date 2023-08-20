@@ -31,6 +31,8 @@ void main () {
     case 5:
       print('Five');
       break;
+    default:
+      print('Number not found'); 
   }
 
 //In Dart, switch statements don’t support ranges like number > 5 . Only ==
