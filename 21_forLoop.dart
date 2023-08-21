@@ -20,4 +20,15 @@ void main() {
   // but you could just as easily use i += 2 to increment by 2 or i-- to 
   // decrement by 1 .
 }
+
+//Continue in for loop
+  //Sometimes you want to skip an iteration only for a certain condition.
+  // You can do that using the continue keyword
+
+  for (var i = 0;i<5;i++) {
+    if (i == 3) {
+      continue;
+    }
+    print(i);
+  }
 }
