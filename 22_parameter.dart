@@ -8,4 +8,13 @@ void main() {
     print('Hello, $person, and your furry friend, $pet.');
   }
   personAndPet('Aria','Cat');
+
+   // You can make parameter optional also. In that case it is not mandatory to
+  //send argument for the optional parameter. To make a parameter optional
+  // you need to keep the parameter inside [] and use ? after type as below.
+
+  fullName(String first, String last,[String? title]) {
+    print('$title, $first,$last');
+  }
+  fullName('Mukul','Rahman');
 }
