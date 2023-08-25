@@ -7,9 +7,18 @@ void main() {
   // special methods you use to create objects from the class
   //Class should be above or below the main metheod.
 
+  //The value we get from a class is called an object. It is also known as an
+//Instance.
+
+  final user = User(); //It is not mandatory to use 'new' keyword to create objcet.
+  user.name = 'Mukul';
+  user.id = 43;
+  print(user.name);
 }
-class User() {
-  int id =0;
+
+class User {
+  int id = 0;
   String name = '';
 }
-// name of the above class is User that has 2 properties: id and name 
+
+// name of the above class is User that has 2 properties: id and name
