@@ -1,5 +1,9 @@
 void main() {
   print("Encapsulation");
+
+  Password myPassword = Password();
+  final text = myPassword.getPlaintext();
+  print(text);
 }
 //One of the core tenets of object-oriented programming is known as encapsulation.
 //his is
@@ -22,3 +26,4 @@ class Password {
     return _plainText;
   }
 }
+
