@@ -12,6 +12,9 @@ void main(){
   // the same instance:
 
   print(myObject.myProperty); // output 1
+  anotherObject.myProperty =2;
+  print(myObject.myProperty); // output 2
+
 
 }
 
