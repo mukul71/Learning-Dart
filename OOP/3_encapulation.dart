@@ -11,7 +11,7 @@ void main() {
 // outside world.
 //How do you accomplish encapsulation in Dart?
 //You can make a variable private in Dart by prefixing the name with an
-// underscore
+// underscore '_'.
 
 class Password {
   String _plainText = 'pass123';
