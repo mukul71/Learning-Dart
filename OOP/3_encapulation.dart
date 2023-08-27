@@ -4,6 +4,10 @@ void main() {
   Password myPassword = Password();
   final text = myPassword.getPlaintext();
   print(text);
+
+  myPassword.plainText = r'Pa$$vv0Rd';
+  final text2 = myPassword.getPlaintext(); // Use the getter to access the modified value
+  print(text2);
 }
 //One of the core tenets of object-oriented programming is known as encapsulation.
 //his is
@@ -11,7 +15,7 @@ void main() {
 // outside world.
 //How do you accomplish encapsulation in Dart?
 //You can make a variable private in Dart by prefixing the name with an
-// underscore '_'.
+// underscore
 
 class Password {
   String _plainText = 'pass123';
@@ -22,8 +26,22 @@ class Password {
 //A getter is a special method that returns the value of a private field variable.
 //It’s the public face of a private variable.
 //getter methods starts with ' get ' like 'getColor' or 'getWidth'.
+
   String getPlaintext() {
     return _plainText;
   }
+
+  //Use a setter if you want to change the internal data in a class
+  //Dart has a special keyword ' set ' for this to go along with set
+
+  set plainText(String text2) {
+    _plainText = text2; // Use the backing variable here
+  }
 }
+
+
+
+
+
+
 
