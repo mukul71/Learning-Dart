@@ -33,3 +33,6 @@ void main(){
   int id = 0;
   String name = '';
  }
+
+// You can make parameter optional by using [] as below:
+ MyClass([this.myProperty]);
