@@ -22,3 +22,14 @@ void main(){
     Address(); // constructor
   var value = '';
   }
+ 
+//we can pass parameters in constructors as below:
+
+ class User{
+  User(int id, String name) {
+    this.id = id;
+    this.name = name;
+  }
+  int id = 0;
+  String name = '';
+ }
