@@ -1,0 +1,10 @@
+void main() {
+  print('Constant Cnstructor');
+
+  //We can make a method property private by using ' _ ' before it.
+  //We can also make properties immutable or unchangable by using the wrod
+  // final or const before it
+
+  final String name = 'Jamal';
+  const int id = 02
+}
