@@ -17,8 +17,8 @@ class Colors {
 void main() {
   final value = Practice.myNum;
   final value2 = Practice.myMethod();
-  print(value);
+  print(value); //0
 
   final backgrounColor = Colors.purple;
-  print(backgrounColor);
+  print(backgrounColor);// Output 0xFF8107D9
 }
