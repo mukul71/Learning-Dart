@@ -7,5 +7,5 @@ void main() {
   //understands to mean “no value”, then you don’t need to add comments explaining 
   //what it means
   int postalCode = null;  //It’s obvious here that there’s no postal code. 
-  
+  // we can use ? for null safety purpose 
 }
