@@ -1,70 +1,74 @@
 void main() {
-// In your dart code, you can give a name to each piece of your data that you
-// you can refer later.
-//The name carries with it an associated type that denotes what sort of data
-// that name refers to, such number, text, or a date.
-
-// Variable
-// A variable works like a container that contains data and its type. It is
-// known as variable because its value can be changed. For example:
-
-  int number = 10; // now the number contains 10
-  number = 15;   // but now, same number contains 15.
-  print (number);
-
-  // The type int. stores Integer data.
-  // to store decimal data we use 'double' data type. For Example:
-
-  double cgpa = 3.5;
-  print("My CGPA is ${cgpa} in the final semester");
-
-  // One interesting example
-  print(10.isEven); // Can you tell what will be the output? 
-
-  
- //Dart is type safe language. If you declare data type once for a variable
-  // you cannot change it later.
   int num = 10;
-  num = 10.5; // This will generate an error.
-  
-  // But, to use the type 'dynamic' allows you to use any type of data.
+  print(num);
+  num = 20;
+  print(num);
+  double num2 = 3.14159;
+  print(num2);
+  print(10.isEven); //Result will be 'true'
+  print(3.14159.round()); // Result will be 3
 
-  dynamic myNumber;
-  myNumber = 10; // int
-  myNumber = 10.5; // double 
-  myNumber = "Karim"; // String
+  //Type Safety
+  //We cannot change the data type once it is declared
 
-    // the keyword var can also give a you little freed regarding data type
-  //if you use the var keyword, assign value to the corresponding variable
-  // dart will identify the type of data and follow it through out the block.
+  int num3 = 3;
+  print(num3);
+  //num3 = 3.14159; //Error. Variable num3 cannot be double as it was declared int earlier.
+  //'var' type can solve the issue as bellow
 
-  var num = 10; // dart will automatically consider this as an integer even
-                // you do do not use the typ int before num.
-  num = 15; // no problem
-  num = 15.5; // it will not allow you to change the data type to double or String.
+  var myNumber;
+  myNumber = 10; // Integer
+  print(myNumber);
 
-  //Constant and Final
-  //Dart has another 2 different type of variables whose values never change.
-  //They are const and final
-  // Sometimes mutable variables can loose their track, that's hy immutable
-  // data types are used.
-  //To create constant in dart, const keyword is used. As below example:
+  myNumber = 10.5;
+  print(myNumber);
 
-  const myConstant = 10;
-  myConstant = 0; // This will generate an error.
+  myNumber = 'ten'; //var can allows to change int or double to string even
+  print(
+      myNumber); // output will be 'ten'. 'Dynamic' can also allow to convert one type to another.
 
-  // In dart, const, is used during compile time, that is for values that can
-  // be determined by the compiler before the program starts running.
-  // If you can’t create a const variable because you don’t know its value
-  // at compile time, then you must use the final keyword to make it a runtime
-  // constant
-  // Like constant, you cannot change the data type once the value is assigned.
-   
-  final finalNumber = 10;
-  finalNumber =10.5; // Thi will generate error. 
-  
-  // in constant you must assign the value while you declare it, but in final
-  // you can assign the value later by keeping it empty during declaration. 
+  //Type Inference tells the type of value once it is assinged as bellow:
 
-  
+  var num4 = 10; // Integer
+  print(num4);
+
+  num4 = 17; // It Ok as num4 is now an interger
+  print(num4);
+
+  //num4 = 10.5;
+  //print (num4); // Error as erlier num4 was int, so it cannot be double now
+
+  print('Const and Final:');
+  //The value for 'const' and 'final' will never change once declared
+  // const is used when you are sure about the data type during compile
+  // final used when you are not sure about the data type until the program runs; runtime
+
+  const myConst = 10;
+  print(myConst);
+
+  //myConst = 10.5;
+  //print(myConst); // Error, as data type cannot be chagneed once used cosnt
+
+  //myConst = 11;
+  //print(myConst); // Error, as value cannot be chagneed once used const
+
+  final myHours = DateTime.now().hour;
+  print('Total hour is:$myHours');
+
+  print('Increment and Decrement:');
+
+  var counter = 1;
+  counter += 1;
+  print(counter); // output will be 2. counter++; will give the same result
+
+  counter -= 1;
+  print(counter); // output will be 0. counter--; will give teh same result
+
+  double myValue = 10;
+  myValue *= 5;
+  print(myValue); // output will be 10x5 = 50.0
+
+  double myValue2 = 10;
+  myValue2 /= 5;
+  print(myValue2); // output will be 10/5 = 2.0
 }
