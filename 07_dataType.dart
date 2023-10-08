@@ -71,4 +71,12 @@ void main() {
   double myValue2 = 10;
   myValue2 /= 5;
   print(myValue2); // output will be 10/5 = 2.0
+
+  //Chcking data type
+
+  num myNumber = 3.14;
+  print(myNumber is double);
+  print(myNumber is int);
+  print(myNumber.runtimeType); // it will check the run time  data type
+}
 }
