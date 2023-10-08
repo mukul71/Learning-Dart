@@ -85,4 +85,12 @@ void main() {
   integer = decimal.toInt();
   print(integer);
 
+  //conversion with mixed types
+
+  const hourlyRate = 10;
+  const hourWorked = 20.5;
+  final totalCost = (hourlyRate * hourWorked)
+      .toDouble(); //if you use const, you will get error as const is not runtime valle
+  print(totalCost);
+
 }
