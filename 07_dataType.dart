@@ -78,5 +78,11 @@ void main() {
   print(myNumber is double);
   print(myNumber is int);
   print(myNumber.runtimeType); // it will check the run time  data type
-}
+
+   // Conversion 
+  var integer = 100;
+  var decimal = 12.5;
+  integer = decimal.toInt();
+  print(integer);
+
 }
