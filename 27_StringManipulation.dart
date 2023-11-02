@@ -55,3 +55,27 @@ void main() {
   //To check the middle/other parts we can use 'contains'
   print(text.contains('love'));
   print(text.contains('flutter'));
+  //
+  //Regular Expression
+  final regex = RegExp('Cat');
+  print(regex.hasMatch('dog'));
+  print(regex.hasMatch('Cat'));
+  print('we can use contains as well');
+  print('dog'.contains(regex));
+  print('cats'.contains(regex));
+  //
+  print('Matching any single character');
+  // dot('.')will match any character
+
+  final matchCharacter = RegExp('c.t');
+  print(matchCharacter.hasMatch('cat'));
+  print(matchCharacter.hasMatch('cut'));
+  print(matchCharacter.hasMatch('cot'));
+  print(matchCharacter.hasMatch('ct'));
+  //we can use ? to mark something as optional
+  final matchCharacter2 = RegExp('c.?t');
+  print(matchCharacter2.hasMatch('cat'));
+  print(matchCharacter2.hasMatch('cut'));
+  print(matchCharacter2.hasMatch('cot'));
+  print(matchCharacter2.hasMatch('ct'));
+}
