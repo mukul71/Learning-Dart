@@ -78,4 +78,15 @@ void main() {
   print(matchCharacter2.hasMatch('cut'));
   print(matchCharacter2.hasMatch('cot'));
   print(matchCharacter2.hasMatch('ct'));
+  print("Matching multiple characters");
+  final oneOrMore = RegExp('WO+W');
+  print(oneOrMore.hasMatch('wow')); //false
+  print(oneOrMore.hasMatch('WOW')); //true
+  print(oneOrMore.hasMatch('WOOOW')); //ture
+
+  //
+  final zeroOrMOre = RegExp('WO*w');
+  print(oneOrMore.hasMatch('WW')); //true
+  print(oneOrMore.hasMatch('WOW')); //true
+  print(oneOrMore.hasMatch('WOOOW')); //ture
 }
