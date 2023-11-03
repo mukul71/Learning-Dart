@@ -89,4 +89,22 @@ void main() {
   print(oneOrMore.hasMatch('WW')); //true
   print(oneOrMore.hasMatch('WOW')); //true
   print(oneOrMore.hasMatch('WOOOW')); //ture
+  print('Matching sets of characters');
+  final set =
+      RegExp('b[oa]t'); //to be true either 'o' or 'a' must match, not both
+  print(set.hasMatch('bat')); //true 1
+  print(set.hasMatch('baot')); //false 2
+  print(set.hasMatch('bot')); //true 3
+  print(set.hasMatch('but')); //false 4
+  print(set.hasMatch('bet')); //false 5
+  print(set.hasMatch('boat')); //false 6
+  print(set.hasMatch('bt')); //false 7
+  //
+  print("we can specify the range by using '-' as below");
+  final letters = RegExp('[a-zA-Z]');
+  print(letters.hasMatch('h')); //ture
+  print(letters.hasMatch('r')); //true
+  print(letters.hasMatch('L')); //ture
+  print(letters.hasMatch('hA')); //true
+  print(letters.hasMatch('2')); //false as number
 }
