@@ -107,4 +107,28 @@ void main() {
   print(letters.hasMatch('L')); //ture
   print(letters.hasMatch('hA')); //true
   print(letters.hasMatch('2')); //false as number
+  //If you want to specify which characters not to match, add ^ just after the
+  //left bracke
+  print('Excluding');
+  final excluded = RegExp('b[^oa]t');
+  print(excluded.hasMatch('bat')); //false
+  print(excluded.hasMatch('bot')); //false
+  print(excluded.hasMatch('but')); //true
+  print(excluded.hasMatch('boat')); //false
+  print(excluded.hasMatch('bt')); //flase
+  //
+  print('Matching the beginning and end');
+  //If you want to validate that a phone number contains only numbers,
+  //you might expect to use the following regular expression:
+
+  final numbers = RegExp('r[0-9]');
+  print(numbers.hasMatch('5552021')); //true
+  print(numbers.hasMatch('55483sd68df')); //false
+  //
+  print('Checking Bangaldeshi mobile phone number');
+  final phoneNumbers = RegExp(r'(\+88)?-?01[1-9]\d{2}-?\d{6}');
+  print(phoneNumbers.hasMatch('01912-1488520')); //true
+  print(phoneNumbers.hasMatch('+8801912-1488520')); //true
+  print(phoneNumbers.hasMatch('01912-18520')); //false
+  print(phoneNumbers.hasMatch('01912-148d48520'));//false
 }
