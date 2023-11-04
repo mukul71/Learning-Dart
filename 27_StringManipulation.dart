@@ -131,4 +131,15 @@ void main() {
   print(phoneNumbers.hasMatch('+8801912-1488520')); //true
   print(phoneNumbers.hasMatch('01912-18520')); //false
   print(phoneNumbers.hasMatch('01912-148d48520'));//false
+
+   print('Matching only numbers'); // Bangladesh phone number format
+  //final mobileNumberRegex = RegExp(r'01[1-9]\d{3}\d{6}');
+  final mobileNumberRegex = RegExp(r'01\d{3}\d{6}');
+  print(mobileNumberRegex.hasMatch('01912158323')); //true
+  print(mobileNumberRegex.hasMatch('01912158r323')); //false
+  print(mobileNumberRegex.hasMatch(
+      '01912158543323')); //this is ture as match the regex of 5 and 6 digits
+  //but if you want to get exact 11 digits, you need to use ^ and $ as bellow
+  final mobileNumberRegex2 = RegExp(r'^01\d{3}\d{6}$');
+  print(mobileNumberRegex2.hasMatch('01912158543323'));//now False
 }
