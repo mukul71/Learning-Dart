@@ -91,7 +91,7 @@ void main(){
   print(mobileNumberRegex2.hasMatch('01912158543323')); // False
   print(mobileNumberRegex2.hasMatch('01912520D360')); //False
  //
- print('Checking password');
+print('Checking password');
   const password = 'passworD1234';
   final lowerCase = RegExp(r'[a-z]');
   final upperCase = RegExp(r'[A-Z]');
@@ -103,6 +103,8 @@ void main(){
     print('Password must contains a uppercase letter');
   } else if (!password.contains(num1)) {
     print('Password must containe a number');
+  } else if (password.length < 12) {
+    print("Paswword must have 12 characters");
   } else {
     print('Your passwerod is OK');
   }
