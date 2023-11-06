@@ -138,4 +138,18 @@ print('Checking password');
   } else {
     print("Your credit card number is Ok");
   }
+//
+  print('Extracting Texts');
+  const htmlText = '''  
+  <!DOCTYPE html>
+  <html>
+   <body>
+   <h1>Dart Tutorial</h1>
+   <p>My favorite language is Dart.</p>
+   </body>
+  </html>
+   ''';
+  final heading =
+      htmlText.substring(44, 57); //start from character 44, ends at 47
+  print(heading);
 }
