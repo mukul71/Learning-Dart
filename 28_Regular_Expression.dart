@@ -152,4 +152,13 @@ print('Checking password');
   final heading =
       htmlText.substring(44, 57); //start from character 44, ends at 47
   print(heading);
+
+ //
+  //Getting the index number. I was counting charcacters one by one, manually, ha ha
+
+  final startIndex =
+      htmlText.indexOf('<h1>') + '<h1>'.length; //('<h1>') is the pattern
+  print(startIndex); // 44
+  final endIndex = htmlText.indexOf('</h1>');//57
+  print(endIndex);
 }
