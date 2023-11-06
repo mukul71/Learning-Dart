@@ -128,4 +128,14 @@ print('Checking password');
 //\w : Matches one alphanumeric character. Same as [a-zA-Z0-9_] .
 //\W : Matches one non-alphanumeric character.
 //\uXXXX : Matches a Unicode character where XXXX is the Unicode value.
+ print('Exercise');
+  //1. Validate that a credit card number contains only numbers and is exactly
+  //16 digits long.
+  const creditCardNum = '123456478954';
+  final creditCardNumCheck = RegExp(r'.{16}');
+  if (!creditCardNum.contains(creditCardNumCheck)) {
+    print("Please enter 16 digits");
+  } else {
+    print("Your credit card number is Ok");
+  }
 }
