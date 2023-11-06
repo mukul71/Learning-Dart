@@ -108,4 +108,24 @@ print('Checking password');
   } else {
     print('Your passwerod is OK');
   }
+ // Summary of RegEx
+// . : Matches one of any character.
+//? : Zero or one match of the previous character.
+//+ : One or more matches of the previous character.
+//* : Zero or more matches of the previous character.
+//{3} : 3 matches of the previous character.
+//{3,5} : 3-5 matches of the previous character.
+//{3,} : 3 or more matches of the previous character.
+//[] : Matches one of any character inside the brackets.
+//[^] : Matches one of any character not inside the brackets.
+//\ : Escapes the special character that follows.
+//^ : Matches the beginning of a string or line.
+//$ : Matches the end of a string or line.
+//\d : Matches one digit.
+//\D : Matches one non-digit.
+//\s : Matches one whitespace character.
+//\S : Matches one non-whitespace character.
+//\w : Matches one alphanumeric character. Same as [a-zA-Z0-9_] .
+//\W : Matches one non-alphanumeric character.
+//\uXXXX : Matches a Unicode character where XXXX is the Unicode value.
 }
