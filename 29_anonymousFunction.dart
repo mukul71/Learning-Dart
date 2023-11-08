@@ -13,4 +13,11 @@ void main() {
   const evens = [2, 4, 6, 8, 10, 12];
   final total = evens.reduce((sum, element) => sum + element);
   print(total);// total will be 42
+   //
+  print('Sorting a list.');
+  final desserts = ['Cookies', 'Pies', 'Donuts', 'Brownies'];
+  print(desserts);
+
+  desserts.sort();
+  print(desserts);
 }
