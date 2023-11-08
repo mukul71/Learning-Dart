@@ -24,4 +24,12 @@ void main() {
   //we can sort string as per their lengths with anonymous functions
   desserts.sort((d1, d2) => d1.length.compareTo(d2.length));
   print(desserts); //Output: [Pies, Donuts, Cookies, Brownies]
+
+//
+  //Combining higher order method
+  final bigTallDesserts = desserts
+      .where((dessert) => dessert.length > 5)
+      .map((dessert) => dessert.toUpperCase())
+      .toList();
+  print(bigTallDesserts);//print [DONUTS,COOKIES,BROWNIES]
 }
