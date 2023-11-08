@@ -20,4 +20,8 @@ void main() {
 
   desserts.sort();
   print(desserts);
+  //
+  //we can sort string as per their lengths with anonymous functions
+  desserts.sort((d1, d2) => d1.length.compareTo(d2.length));
+  print(desserts); //Output: [Pies, Donuts, Cookies, Brownies]
 }
