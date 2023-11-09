@@ -42,7 +42,11 @@ void main() {
       });
   myButton.onPressed();
 
-}
+} // main class
+
+//
+//
+//
 class Button {
   Button({required this.title, required this.onPressed});
 
@@ -60,4 +64,10 @@ class StateManager {
   }
 }
 
-
+  //
+  final manager = StateManager();
+  final myButton1 = Button(
+      title: 'Click Me',
+      onPressed: () {
+        manager.handleButtonClick();
+      });
