@@ -32,4 +32,21 @@ void main() {
       .map((dessert) => dessert.toUpperCase())
       .toList();
   print(bigTallDesserts);//print [DONUTS,COOKIES,BROWNIES]
+  //
+  print('Callback Funciton');
+
+  final myButton = Button(
+      title: 'Click me',
+      onPressed: () {
+        print('Clicked');
+      });
+  myButton.onPressed();
+
 }
+class Button {
+  Button({required this.title, required this.onPressed});
+
+  final String title;
+  final Function onPressed;
+}
+
