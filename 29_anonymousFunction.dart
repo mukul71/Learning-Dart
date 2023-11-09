@@ -54,7 +54,7 @@ void main() {
   incrementCounter();
   incrementCounter();
   incrementCounter();
-  print(counter);
+  print(counter);// output will be: 5
 
 } // main class
 
