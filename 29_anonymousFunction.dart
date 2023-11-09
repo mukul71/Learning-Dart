@@ -49,4 +49,15 @@ class Button {
   final String title;
   final Function onPressed;
 }
+//
+//
+//Simplifying with tear_off
+class StateManager {
+  int _counter = 0;
+
+  void handleButtonClick() {
+    _counter++;
+  }
+}
+
 
