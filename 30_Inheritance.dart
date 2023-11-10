@@ -3,7 +3,8 @@ void main() {
 
 
   
-}
+}//Main Class 
+
 enum Grade = {A,B,C,C,E,F};
 
 class Person{
@@ -14,16 +15,17 @@ class Person{
   String get fullName => '$giveName $surName';
 
   @override
-  String toString =>fullName;
+  String toString => fullName;
 }
 
 class Student{
-  Student(this.giveName, this.surName)
+  Student(this.giveName, this.surName);
   String giveName;
   String surName;
   var grades = <Grade>[];
   String get fullName =>'$giveName $surName';
+  
   @override
-  String toString()=>fullName();
+  String toString() => fullName();
   
 }
