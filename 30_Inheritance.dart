@@ -7,6 +7,9 @@ void main() {
   print(jon); //Jon Smith
   print(jane); //Jane Smith
   print(joe); //Smith Joe
+  //
+  final child = SomeChild();
+  child.doSomeWork();
 }
 
 enum Grade { A, B, C, E, F }
@@ -42,7 +45,6 @@ class Student2 extends Person {
   @override
   String get fullName => '$surName $giveName';
 }
-//
 //Calling super class from an overridden method
 
 class SomeParent {
@@ -58,4 +60,3 @@ class SomeChild extends SomeParent {
     print('Child doing some other work');
   }
 }
-
