@@ -3,8 +3,10 @@ void main() {
 
   final jon = Person('Jon', 'Smith');
   final jane = Student('Jane', 'Smith');
-  print(jon);
-  print(jane);
+  final joe = Student2('Joe', "Smith");
+  print(jon); //Jon Smith
+  print(jane); //Jane Smith
+  print(joe); //Smith Joe
 }
 
 enum Grade { A, B, C, E, F }
@@ -35,4 +37,8 @@ class Student {
 class Student2 extends Person {
   Student2(String giveName, String surName) : super(giveName, surName);
   var grades = <Grade>[];
+
+  //overriding parent methods
+  @override
+  String get fullName => '$surName $giveName';
 }
