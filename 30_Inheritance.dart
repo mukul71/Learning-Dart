@@ -27,5 +27,11 @@ class Student{
   
   @override
   String toString() => fullName();
-  
+
+  //Inheriting to student from person
+
+class Student2 extends Person{
+  Student2 (String giveName, String surName) : super(giveName,surName);
+  var grades = <Grade>[];
+}
 }
