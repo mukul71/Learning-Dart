@@ -42,3 +42,20 @@ class Student2 extends Person {
   @override
   String get fullName => '$surName $giveName';
 }
+//
+//Calling super class from an overridden method
+
+class SomeParent {
+  void doSomeWork() {
+    print('Parent working');
+  }
+}
+
+class SomeChild extends SomeParent {
+  @override
+  void doSomeWork() {
+    super.doSomeWork();
+    print('Child doing some other work');
+  }
+}
+
